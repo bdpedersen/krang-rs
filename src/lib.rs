@@ -8,16 +8,16 @@ mod sponge;
 use crate::sponge::sponge::Sponge;
 use core::cmp::min;
 
-struct Krang {
+pub struct Krang {
     sponge: Sponge
 }
 
 impl Krang {
-    fn new() -> Krang {
+    pub fn new() -> Krang {
         Krang { sponge: Sponge::new() }
     }
 
-    fn seed(&mut self, val: &[u8]) {
+    pub fn seed(&mut self, val: &[u8]) {
         let mut idx = 0;
         while idx < val.len() {
             let stride = min(8,val.len()-idx);
@@ -27,7 +27,7 @@ impl Krang {
         }
     }
 
-    fn fetch(&mut self, val: &mut[u8]) {
+    pub fn fetch(&mut self, val: &mut[u8]) {
         let mut idx = 0;
         while idx < val.len() {
             let stride = min(8,val.len()-idx);

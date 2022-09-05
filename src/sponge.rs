@@ -1,5 +1,4 @@
 //use unroll::unroll_for_loops;
-
 pub mod sponge {
     
 const RC: [u64;24] = [
@@ -129,9 +128,5 @@ impl Sponge {
     }
 
 }
-
-
-
-
 
 }
