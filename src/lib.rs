@@ -1,3 +1,5 @@
+// Copyright 2022, Brian Dam Pedersen.
+// Licensed under the BSD 2-clause license. 
 #![no_std]
 
 extern crate core;

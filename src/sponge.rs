@@ -1,4 +1,6 @@
-//use unroll::unroll_for_loops;
+// Copyright 2022, Brian Dam Pedersen.
+// Licensed under the BSD 2-clause license. 
+
 pub mod sponge {
     
 const RC: [u64;24] = [
