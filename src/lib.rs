@@ -1,6 +1,6 @@
+#![no_std]
 
 extern crate core;
-extern crate num;
 extern crate unroll; 
 
 mod sponge;
